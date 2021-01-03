@@ -24,10 +24,10 @@ class CashRegister
   def add_item(title, price, quantity = 0)
 
     if quantity == 0
-      @items << title
+      @@items << title
       @total += price * (quantity + 1)
     else
-      quantity.times { @items << title }
+      quantity.times { @@items << title }
       @total += price * quantity
     end
   end
@@ -47,7 +47,7 @@ class CashRegister
 
   def items
     binding.pry
-    @items
+    @@items
   end
 
 
