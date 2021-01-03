@@ -9,11 +9,9 @@ class CashRegister
     @items = [ ]
   end
 
-
   def total
     @total
   end
-
 
   def add_item(title, price, quantity = 0)
 
@@ -26,7 +24,6 @@ class CashRegister
     end
   end
 
-
   def apply_discount
   #  binding.pry
     if @discount != 0
@@ -37,7 +34,6 @@ class CashRegister
       "There is no discount to apply."
     end
   end
-
 
   def items
     @items
