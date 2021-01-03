@@ -3,6 +3,10 @@ class CashRegister
 
   attr_accessor :discount, :items
 
+  def total= (total)
+    @total = total
+  end
+
 #  @@items = [ ]
 #  @@title = " "
 #  @@quantity = 1
