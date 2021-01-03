@@ -15,26 +15,22 @@ class CashRegister
     @items = [ ]
   end
 
+
   def total
     @total
   end
 
-  def add_item(title, price, quantity = 0)
 
-  #  if quantity == 0
-  #    @items << title
-  #  elsif
-  #    quantity.times { @items << title }
-  #  end
+  def add_item(title, price, quantity = 0)
     if quantity == 0
       @items << title
       @total += price * (quantity + 1)
-
     else
       quantity.times { @items << title }
       @total += price * quantity
     end
   end
+
 
   def apply_discount
   #  binding.pry
