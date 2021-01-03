@@ -41,6 +41,7 @@ class CashRegister
     if @discount != 0
       decrease_by = (@total*@discount/100.0).to_i
       @total -= decrease_by
+      binding.pry
       "After the discount, the total comes to $#{@total}."
     else
       "There is no discount to apply."
