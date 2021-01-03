@@ -1,7 +1,7 @@
 require "pry"
 class CashRegister
 
-  attr_accessor :discount, :items
+  attr_accessor :items, :discount, :items
 
 
 
