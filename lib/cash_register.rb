@@ -3,9 +3,7 @@ class CashRegister
 
   attr_accessor :discount, :items
 
-  def total= (total)
-    @total = total
-  end
+
 
 #  @@items = [ ]
 #  @@title = " "
@@ -17,7 +15,9 @@ class CashRegister
     @items = [ ]
   end
 
-
+  def total
+    @total
+  end
 
   def add_item(title, price, quantity = 0)
 
